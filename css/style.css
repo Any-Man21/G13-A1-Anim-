@@ -16,6 +16,10 @@ body, html{
     font-style: normal;
 }
 
+body{
+    padding-top: 100px;
+}
+
 nav{
     width: 96%;
     /* border: 1px solid red; */
@@ -23,7 +27,12 @@ nav{
     margin: 16px auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);  
+    z-index: 1000;
 }
 
 nav img{
@@ -222,12 +231,68 @@ nav a:hover{
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
 }
 
 
 
+/* second-brain  */
 
+#second-brain{
+    margin: 120px;
+    /* border: 1px solid red; */
+}
 
+#second-brain .brain-img{
+    border-radius: 12px;
+}
 
+.brain-texts{
+    padding-top: 102px;
+    padding-bottom: 102px;
+    padding-left: 60px;
+}
+
+.brain-texts .p1{
+    
+    color: green;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.brain-texts h1{
+    color: var(--#001931, var(--Color, rgba(0, 25, 49, 1)));
+    font-style: bold;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.brain-texts .p2{
+    color: var(--#627382, rgba(98, 115, 130, 1));
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: px;
+}
+
+.brain-container li{
+    color:  var(--Style, rgba(0, 25, 49, 1));
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+
+.brain-container li{
+    margin-bottom: 16px;
+    list-style-type: none;
+}
+
+.brain-container{
+    display: flex;
+}
 
